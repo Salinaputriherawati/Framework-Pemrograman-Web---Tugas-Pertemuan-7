@@ -15,6 +15,10 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('product-index')" :active="request()->routeIs('product-index')">
+                        {{ __('Product') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -72,7 +76,7 @@
             </x-responsive-nav-link>
         </div>
 
-        <!-- Data master Dropdown -->
+        <!-- Data master Dropdown
         <div class="hidden sm:flex sm:items-center sm:ms-6">
             <x-dropdown align="right" width="48">
                 <x-slot name="trigger">
@@ -89,12 +93,12 @@
                     </button>
                 </x-slot>
                 <x-slot name="content">
-                    <x-dropdown-link :href="route('product-create')">
+                    <x-dropdown-link :href="route('product-index')">
                         Product Master
                     </x-dropdown-link>
                 </x-slot>
             </x-dropdown>
-        </div>
+        </div> -->
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
